@@ -1,45 +1,14 @@
 {
+  "version": 1.0,
     "issuer": "https://cop.stg.sebank.se",
-    "authorization_endpoint": "https://cop.stg.sebank.se/mga/sps/oauth/oauth20/authorize",
+    "registration_endpoint": "https://cop.stg.sebank.se/mga/sps/oauth/oauth20/register",
     "token_endpoint": "https://cop.stg.sebank.se/mga/sps/oauth/oauth20/token",
-    "userinfo_endpoint": "https://cop.stg.sebank.se/mga/sps/oauth/oauth20/userinfo",
     "jwks_uri": "https://keystore.openbankingtest.org.uk/0014H00004Ffz5LQAR/ab2yxhZxBPF1EncPJL9K0c.jwks",
-    "response_types_supported": [
-        "code id_token"
-    ],
-    "subject_types_supported": [
-        "public"
-    ],
-    "token_endpoint_auth_methods_supported": [
-        "private_key_jwt",
-        "client_secret_post",
-        "client_secret_basic",
-        "tls_client_auth",
-        "self_signed_tls_client_auth"
-    ],
-    "grant_types_supported": [
-        "client_credentials"
-    ],
-    "id_token_signing_alg_values_supported": [
-        "PS256"
-    ],
-    "poc": "https://cop.stg.sebank.se/mga/",
-    "name": "cop",
-    "introspection_endpoint": "https://cop.stg.sebank.se/mga/sps/oauth/oauth20/introspect",
-    "revocation_endpoint": "https://cop.stg.sebank.se/mga/sps/oauth/oauth20/revoke",
-    "registration_endpoint": "https://cop.stg.sebank.se/mga/sps/oauth/oauth20/register/cop",
-    "device_authorize_endpoint": "https://cop.stg.sebank.se/mga/sps/oauth/oauth20/device_authorize",
-    "user_authorize_endpoint": "https://cop.stg.sebank.se/mga/sps/oauth/oauth20/user_authorize",
-    "scopes_supported": "openid name-verification",
-    "userinfo_signing_alg_values_supported": [
-        "PS256"
-    ],
-    "request_object_signing_alg_values_supported": [
-        "PS256"
-    ],
-    "token_endpoint_auth_signing_alg_values_supported": [
-        "PS256"
-    ],
-    "claims_parameter_supported": true,
-    "request_parameter_supported": true
+    "scopes_supported":["name-verification"],
+    "response_types_supported": ["code id_token"],
+    "grant_types_supported": ["client_credentials"],
+    "token_endpoint_auth_methods_supported": ["private_key_jwt", "tls_client_auth"],
+    "token_endpoint_auth_signing_alg_values_supported": ["PS256"],
+    "tls_client_certificate_bound_access_tokens": true,
+    "id_token_signing_alg_values_supported": ["PS256"]
 }
