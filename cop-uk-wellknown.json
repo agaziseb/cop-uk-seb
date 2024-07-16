@@ -3,7 +3,7 @@
     "authorization_endpoint": "https://cop.stg.sebank.se/mga/sps/oauth/oauth20/authorize",
     "token_endpoint": "https://cop.stg.sebank.se/mga/sps/oauth/oauth20/token",
     "userinfo_endpoint": "https://cop.stg.sebank.se/mga/sps/oauth/oauth20/userinfo",
-    "jwks_uri": "https://keystore.openbankingtest.org.uk/0014H00004Ffz5LQAR/0014H00004Ffz5LQAR.jwks",
+    "jwks_uri": "https://keystore.openbankingtest.org.uk/0014H00004Ffz5LQAR/ab2yxhZxBPF1EncPJL9K0c.jwks",
     "response_types_supported": [
         "code id_token"
     ],
