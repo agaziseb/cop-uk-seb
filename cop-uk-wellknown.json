@@ -1,0 +1,52 @@
+{
+    "issuer": "https://cop.stg.sebank.se",
+    "authorization_endpoint": "https://cop.stg.sebank.se/mga/sps/oauth/oauth20/authorize",
+    "token_endpoint": "https://cop.stg.sebank.se/mga/sps/oauth/oauth20/token",
+    "userinfo_endpoint": "https://cop.stg.sebank.se/mga/sps/oauth/oauth20/userinfo",
+    "jwks_uri": "https://keystore.openbankingtest.org.uk/0014H00004Ffz5LQAR/0014H00004Ffz5LQAR.jwks",
+    "response_types_supported": [
+        "none"
+    ],
+    "response_modes_supported": [
+        "fragment",
+        "form_post"
+    ],
+    "subject_types_supported": [
+        "public"
+    ],
+    "token_endpoint_auth_methods_supported": [
+        "private_key_jwt",
+        "client_secret_post",
+        "client_secret_basic",
+        "tls_client_auth",
+        "self_signed_tls_client_auth"
+    ],
+    "grant_types_supported": [
+        "urn:ietf:params:oauth:grant-type:jwt-bearer",
+        "refresh_token"
+    ],
+    "id_token_signing_alg_values_supported": [
+        "PS256"
+    ],
+    "id_token_encryption_alg_values_supported": [],
+    "id_token_encryption_enc_values_supported": [],
+    "poc": "https://cop.stg.sebank.se/mga/",
+    "name": "cop",
+    "introspection_endpoint": "https://cop.stg.sebank.se/mga/sps/oauth/oauth20/introspect",
+    "revocation_endpoint": "https://cop.stg.sebank.se/mga/sps/oauth/oauth20/revoke",
+    "registration_endpoint": "https://cop.stg.sebank.se/mga/sps/oauth/oauth20/register/cop",
+    "device_authorize_endpoint": "https://cop.stg.sebank.se/mga/sps/oauth/oauth20/device_authorize",
+    "user_authorize_endpoint": "https://cop.stg.sebank.se/mga/sps/oauth/oauth20/user_authorize",
+    "scopes_supported": "openid name-verification",
+    "userinfo_signing_alg_values_supported": [
+        "PS256"
+    ],
+    "request_object_signing_alg_values_supported": [
+        "PS256"
+    ],
+    "token_endpoint_auth_signing_alg_values_supported": [
+        "PS256"
+    ],
+    "claims_parameter_supported": true,
+    "request_parameter_supported": true
+}
